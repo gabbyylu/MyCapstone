@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+   
+
+    <title>Fortune Teller</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- this is the start of content -->
+    <h1>
+      Fortune Teller
+    </h1>
+    <img src="https://st.depositphotos.com/1653909/3078/i/450/depositphotos_30784187-stock-photo-fortune-tellers-crystal-ball-with.jpg" alt="" width="300">
+    <form name="fortuneTeller" id="fortuneTeller" action="fortune.html">
+      <br>
+      <label for="questionfield">Question:</label>
+      <input type="number" id="questionfield" name="question" placeholder="A yes or no question">
+      <br>
+      <label for="namefield">Name:</label>
+      <input type="text" id="namefield" name="name" placeholder="your name" required>
+      <br>
+      <label for="questionfield">How old are you?</label>
+      <input type="number" id="questionfield" name="question" placeholder="Your age">
+      <br>
+      <label for ="zodiacsign">Zodiac Sign</label>
+      <select id="zodiacsign" name="zodiacsign">
+          <option value="Leo">Leo</option>
+          <option value="Aries">Aries</option>
+          <option value="Virgo">Virgo</option>
+          <option value="Aquarius">Aquarius</option>
+          <option value="Cancer">Cancer</option>
+          <option value="Libra">Libra</option>
+          <option value="Capricorn">Capricorn</option>
+          <option value="Taurus">Taurus</option>
+          <option value="Scorpio">Scorpio</option>
+          <option value="Gemini">Gemini</option>
+          <option value="Pisces">Pisces</option>
+      </select>
+      <h4>What are things you love?</h4>
+        <label for = "userloves"></label>
+        <textarea name = "userloves" id = "userloves" cols = "20" rows = "2"></textarea>        
+        <br></br>
+
+      <input type="submit">
+    </form>
+    <div id="fortune"></div>
+  </body>
+</html>
